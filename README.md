@@ -38,7 +38,7 @@ Follow the steps below to set up and run the website:
    ```
    Add the app to `INSTALLED_APPS` in `Todo/settings.py`.
 
-8. Add a `urls.py` file for your app.
+8. Add a `Urls.py` file for your app.
 9. Create separate folders:
    - `Templates` (for HTML files)
    - `Static` (for CSS and script files)
@@ -90,6 +90,6 @@ projet
    |-admin.py
    |-models.py
    |-views.py
-   |-urls.py
+   |-Urls.py
 ```
 
