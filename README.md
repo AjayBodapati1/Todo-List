@@ -48,7 +48,7 @@ Follow the steps below to set up and run the website:
     import os
     ```
     Also, register the model in `admin.py`.
-12. Run the following commands to apply migrations:
+12. Move inside Todo using "cd Todo" and run the following commands to apply migrations:
     ```sh
     python manage.py makemigrations
     python manage.py migrate
