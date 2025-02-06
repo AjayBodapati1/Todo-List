@@ -14,4 +14,4 @@ def home(request):
         return redirect('home')  
 
     tasks = Task.objects.all()
-    return render(request, 'home.html', {'task': tasks})
+    return render(request, 'Home.html', {'task': tasks})
