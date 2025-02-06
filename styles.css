@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    padding: 20px;
+    background-color: #ff8cfb;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center; /* Centers the form horizontally */
+    margin-top: 50px; /* Adjust this value for vertical positioning */
+}
+
+.in-form {
+    background-color: white;
+    padding: 15px; /* Space around the text */
+    display: inline-block; /* Prevents full-width stretching */
+    border: 1px solid #ccc; /* Optional: Adds a border for visibility */
+    border-radius: 5px; /* Optional: Rounds the corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+}
+
+.out-form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    width: 80px; /* Adjust width as needed */
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.task-item {
+    background: rgb(167, 234, 255);
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 5px solid #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Adjust width to make the box smaller */
+    width: 90%; /* Keeps it responsive */
+    height: 30px;
+}
+
+.task-item h4 {
+    font-size: 18px; /* Increases text size */
+    margin: 0; /* Removes default margin */
+}
+
+.donebtn {
+    margin-top: 15px;
+    font-size: 16px; /* Increases button text size */
+    padding: 5px 10px; /* Adjust button size */
+    width: 80px; /* Adjust width as needed */
+    height: 35px; /* Adjust height as needed */
+    border: none;
+    border-radius: 5px;
+}
+
+h3 {
+    text-align: center; /* Centers the heading */
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    margin-top: 20px;
+}

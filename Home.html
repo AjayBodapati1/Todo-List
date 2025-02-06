@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="form-container">
+        <form class="in-form" action="" method="POST">
+            {% csrf_token %}
+            <label for="inputText">Task:</label>
+            <input type="text" id="inputText" name="task" placeholder="Enter task">
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+    <div class="task-container">
+        <h3>Pending tasks</h3>
+    {% block content %}
+    {% for t in task %}
+        <div class="task-item">
+            <span><h4>{{ forloop.counter }}. {{ t.task }}</h4></span>
+            <form class="out-form" action="" method="post" style="display:inline;" onsubmit="confettiEffect(event)">
+                {% csrf_token %}
+                <input type="hidden" name="delete_task" value="{{ t.id }}">
+                <button class="donebtn" type="submit">Done</button>
+            </form>
+        </div>
+    {% empty %}
+        <p>No tasks pending.</p>
+    {% endfor %}
+{% endblock content %}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.1/dist/confetti.browser.min.js">
+    </script>
+    <script src="{% static 'scripts/confeti.js' %}"></script>
+</body>
+</html>
