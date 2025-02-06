@@ -72,3 +72,24 @@ Follow the steps below to set up and run the website:
     ```
     Log in using the superuser credentials created earlier.
 
+## File Structure
+
+These are the files you need to update:
+```
+projet
+|-Templates
+     |-Home.html
+|-static
+   |-scripts
+      |-confeti.js
+   |-styles.css
+|-Todo
+   |-settings.py
+   |-urls.py
+|-todoApp
+   |-admin.py
+   |-models.py
+   |-views.py
+   |-urls.py
+```
+
