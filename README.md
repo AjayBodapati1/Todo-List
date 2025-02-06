@@ -77,19 +77,20 @@ Follow the steps below to set up and run the website:
 These are the files you need to update:
 ```
 projet
-|-Templates
-     |-Home.html
-|-static
-   |-scripts
-      |-confeti.js
-   |-styles.css
 |-Todo
-   |-settings.py
-   |-urls.py
-|-todoApp
-   |-admin.py
-   |-models.py
-   |-views.py
-   |-Urls.py
+   |-Templates
+        |-Home.html
+   |-static
+      |-scripts
+         |-confeti.js
+      |-styles.css
+   |-Todo
+      |-settings.py
+      |-urls.py
+   |-todoApp
+      |-admin.py
+      |-models.py
+      |-views.py
+      |-Urls.py
 ```
 
